@@ -22,11 +22,7 @@ export class CheckboxOverviewExample {
   };
 
   approval() {
-    if (this.data.checked) {
-      this.data.indeterminate = true;
-    } else {
-      this.data.indeterminate = false;
-    }
+    this.data.indeterminate = false;
   }
 
   isIndeterminate() {
