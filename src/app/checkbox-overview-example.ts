@@ -13,7 +13,7 @@ import {Component} from '@angular/core';
 export class CheckboxOverviewExample {
 
   data = {
-    indeterminate: false,
+    approved: false,
     checked: false,
   };
 
@@ -22,14 +22,13 @@ export class CheckboxOverviewExample {
   };
 
   approval() {
-    this.data.indeterminate = false;
+    this.data.approved = false;
   }
 
   isIndeterminate() {
-    return this.data.checked && !this.data.indeterminate;
+    return this.data.checked && !this.data.approved;
   }
 }
-
 
 /**  Copyright 2019 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

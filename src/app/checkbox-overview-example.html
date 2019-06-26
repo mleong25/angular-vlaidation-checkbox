@@ -1,7 +1,7 @@
-<mat-checkbox [indeterminate]="data.indeterminate" [(ngModel)]="data.checked"
+<mat-checkbox [indeterminate]="this.data.checked && !this.data.approved" [(ngModel)]="data.checked"
 (change)="approval()">Data {{data | json}}</mat-checkbox>
 <br>
-<mat-checkbox [(ngModel)]="this.data.checked && !this.data.indeterminate">Awaiting Approval {{data | json}}</mat-checkbox>
+<mat-checkbox [(ngModel)]="this.data.approved">Awaiting Approval {{data | json}}</mat-checkbox>
 
 
 <!-- Copyright 2019 Google Inc. All Rights Reserved.
